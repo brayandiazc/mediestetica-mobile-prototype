@@ -1,0 +1,2 @@
+module GirlHelper
+end

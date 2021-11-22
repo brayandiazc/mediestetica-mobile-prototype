@@ -1,0 +1,35 @@
+<h1 class="title is-size-4">
+  <%= @page_title %>
+</h1>
+
+<div class="columns is-mobile">
+  <div class="column is-4 is-offset-1">
+    <div class="level">
+      <div class="level-item has-text-centered">
+        <%= link_to girl_selfie_path do %>
+          <figure class="image is-128x128">
+            <%= image_tag "avatars/png/girl/avatarGirl.png", class: "is-rounded", alt:"logotipo" %>
+          </figure>
+        <% end %>
+      </div>
+      <h2 class="subtitle is-size-7">
+        Femenino
+      </h2>
+    </div>
+  </div>
+
+  <div class="column is-4 is-offset-2">
+    <div class="level">
+      <div class="level-item has-text-centered">
+        <%= link_to boy_selfie_path do %>
+          <figure class="image is-128x128">
+            <%= image_tag "avatars/png/boy/avatarBoy.png", class: "is-rounded", alt:"logotipo" %>
+          </figure>
+        <% end %>
+      </div>
+      <h2 class="subtitle is-size-7">
+        Masculino
+      </h2>
+    </div>
+  </div>
+</div>

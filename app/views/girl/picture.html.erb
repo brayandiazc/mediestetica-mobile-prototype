@@ -1,0 +1,42 @@
+<div class="columns is-mobile">
+  <div class="column">
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <figure class="image is-256x256">
+          <%= image_tag "avatars/png/girl/pictureGirl.jpg", class: "is-rounded" %>
+        </figure>
+      </div>
+    </nav>
+
+    <h2 class="subtitle is-size-6">
+      ¿Estas deacuerdo con esta foto?
+    </h2>
+    <!-- Main container -->
+    <nav class="level is-mobile">
+      <!-- Left side -->
+      <div class="level-item has-text-centered">
+        <%= link_to girl_photo_path, class: "button is-medium is-rounded" do %>
+          <span class= "icon is-medium">
+            <%= fa_icon "arrow-left" %>
+          </span>
+          <span>
+            No
+          </span>
+        <% end %>
+      </div>
+
+      <!-- Right side -->
+      <div class="level-item has-text-centered">
+        <%= link_to girl_age_path, class: "button is-medium is-rounded" do %>
+          <span>
+            Si
+          </span>
+          <span class= "icon is-medium">
+            <%= fa_icon "arrow-right" %>
+          </span>
+        <% end %>
+      </div>
+    </nav>
+
+  </div>
+</div>

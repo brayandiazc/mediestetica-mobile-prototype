@@ -1,0 +1,76 @@
+<div class="columns is-mobile">
+  <div class="column">
+    <nav class="level">
+      <div class="level-item has-text-centered">
+        <figure class="image is-256x256">
+        <%= image_tag "avatars/png/girl/pictureGirl.jpg", class: "is-rounded" %>
+      </figure>
+      </div>
+    </nav>
+    <p>
+      <h1 class="subtitle is-size-4">
+        Tu piel es
+      </h1>
+      <h1 class="title is-size-4">
+        SECA
+      </h1>
+    </p>
+
+    <p>
+      <h2 class="content subtitle is-size-6 has-text-justified">
+        La piel seca presenta poca elasticidad y cierta tirantez, su tacto es áspero, y le falta flexibilidad y suavidad.  La piel seca al ser tensa, fina y frágil puede llegar a producir algún tipo de descamación e irritaciones por eso requiere cuidados y productos específicos que ayuden a restablecer la barrera de la piel y que aporten la hidratación que necesita.
+      </h2>
+    </p>
+
+    <p>
+      <h2 class="content subtitle is-size-6 has-text-left">
+        Te recomendamos los siguientes productos:
+      </h2>
+      <div class="columns is-mobile">
+        <div class="column is-4 is-offset-1">
+          <div class="level">
+            <div class="level-item has-text-centered">
+              <%= link_to boy_result_path do %>
+                <figure class="image is-128x128">
+                  <%= image_tag "product_01.jpg", class: "is-rounded", alt:"logotipo" %>
+                </figure>
+              <% end %>
+            </div>
+            <h2 class="subtitle is-size-7">
+              Nombre de producto
+            </h2>
+          </div>
+        </div>
+
+        <div class="column is-4 is-offset-2">
+          <div class="level">
+            <div class="level-item has-text-centered">
+              <%= link_to boy_result_path do %>
+                <figure class="image is-128x128">
+                  <%= image_tag "product_02.jpg", class: "is-rounded", alt:"logotipo" %>
+                </figure>
+              <% end %>
+            </div>
+            <h2 class="subtitle is-size-7">
+              Nombre de producto
+            </h2>
+          </div>
+        </div>
+      </div>
+
+    </p>
+    <p>
+      Puedes adquirirlos con tu profesional de la estética o en nuestra tienda virtual haciendo click aqui.
+    </p>
+    <p>
+      <a href="https://mediestetica.co/">
+        <span class="icon is-large">
+          <%= fa_icon "shopping-cart", class: "fa-3x" %>
+        </span>
+      </a>
+    </p>
+
+    <br>
+    <%= link_to "Repetir test", principal_gender_path, class: "button is-small is-rounded" %>
+  </div>
+</div>

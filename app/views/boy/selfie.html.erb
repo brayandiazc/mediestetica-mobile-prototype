@@ -1,0 +1,24 @@
+<h1 class="title is-size-4">
+  Tomate una selfie
+</h1>
+<h2 class="subtitle is-size-6">
+  Asegurate de tener buena iluminación
+</h2>
+
+<nav class="level">
+  <div class="level-item has-text-centered">
+    <figure class="image is-128x128">
+      <%= image_tag "avatars/png/boy/selfieBoy.png", class: "is-rounded" %>
+    </figure>
+  </div>
+</nav>
+
+<h2 class="subtitle is-size-6">
+  Usaremos tu foto para ayudar a determinar tu tipo de piel
+</h2>
+
+<%= link_to boy_photo_path, class: "button is-link is-medium is-rounded" do %>
+  <span>
+    <%= fa_icon "camera" %>
+  </span>
+<% end %>

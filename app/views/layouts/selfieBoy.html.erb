@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mediesteticaprototypemobile</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= favicon_link_tag 'favicon.png' %>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <section class="hero is-light is-fullheight img-photo-boy">
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <%= yield %>
+        </div>
+      </div>
+
+      <!-- Hero footer: will stick at the bottom -->
+      <div class="hero-foot">
+        <nav class="tabs is-boxed is-fullwidth">
+          <div class="container">
+            <ul>
+              <li class="">
+                <%= link_to "Reintentar", boy_selfie_path, class: "has-text-danger" %>
+              </li>
+              <li class="">
+                <%= link_to "Aceptar", boy_picture_path, class: "has-text-danger" %>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
+  </body>
+</html>
